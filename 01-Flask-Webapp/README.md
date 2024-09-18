@@ -31,6 +31,13 @@ This app provides a RESTful API for managing a collection of items. The applicat
 * Use a tool like Postman or curl to send a POST request to `http://localhost:5000/items`
 * `curl -X POST -H "Content-Type: application/json" -d '{"name": "Item 1"}' http://localhost:5000/items`
 
+## CURL Commands:
+* `curl -X GET http://localhost:5000/items`
+* `curl -X PUT -H "Content-Type: application/json" -d '{"name": "Updated Item"}' http://localhost:5000/items/1`
+* `curl -X DELETE http://localhost:5000/items/1`
+* `curl -X POST -H "Content-Type: application/json" -d '{"name": "Item 2", "description": "This is item 2."}' http://localhost:5000/items`
+
+
 ## API Endpoints
 1. Get All Items
 * Endpoint: GET /items
